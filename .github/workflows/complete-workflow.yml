@@ -1,5 +1,6 @@
 name: Build code, run unit test, run SAST, SCA, DAST security scans
-on: push
+on: 
+  push
 
 jobs:
   build:
@@ -44,3 +45,4 @@ jobs:
           target: 'http://testphp.vulnweb.com/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
+# trigger workflow
